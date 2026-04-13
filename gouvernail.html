@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gouvernail — Algo Next</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gouvernail.css" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true">
+      <div class="bg-group is-active" data-bg-group="dirigeant">
+        <span class="bg-elm" style="--x:12%;--y:24%;--s:180px;--o:.26;--d:0ms"></span>
+        <span class="bg-elm" style="--x:76%;--y:20%;--s:140px;--o:.2;--d:80ms"></span>
+        <span class="bg-elm" style="--x:65%;--y:68%;--s:220px;--o:.16;--d:140ms"></span>
+        <div class="bg-job left">
+          <h3>Dirigeant</h3>
+          <p>Vision, priorites, pilotage des resultats.</p>
+        </div>
+        <div class="bg-job right">
+          <p>KPI, budget, gouvernance equipe.</p>
+        </div>
+        <div class="bg-job top">
+          <p>Horizon: croissance, innovation, execution.</p>
+        </div>
+        <div class="bg-job bottom">
+          <p>Soft skills: decision, communication, vision.</p>
+        </div>
+      </div>
+      <div class="bg-group" data-bg-group="developpeur">
+        <span class="bg-elm" style="--x:18%;--y:26%;--s:170px;--o:.24;--d:0ms"></span>
+        <span class="bg-elm" style="--x:70%;--y:18%;--s:130px;--o:.22;--d:90ms"></span>
+        <span class="bg-elm" style="--x:58%;--y:72%;--s:230px;--o:.18;--d:160ms"></span>
+        <div class="bg-job left">
+          <h3>Developpeur</h3>
+          <p>Code, architecture, qualite logicielle.</p>
+        </div>
+        <div class="bg-job right">
+          <p>Tests, revues, performance applicative.</p>
+        </div>
+        <div class="bg-job top">
+          <p>Stack: front, back, API, data.</p>
+        </div>
+        <div class="bg-job bottom">
+          <p>Soft skills: rigueur, collaboration, curiosite.</p>
+        </div>
+      </div>
+      <div class="bg-group" data-bg-group="product">
+        <span class="bg-elm" style="--x:14%;--y:30%;--s:200px;--o:.24;--d:0ms"></span>
+        <span class="bg-elm" style="--x:74%;--y:24%;--s:120px;--o:.2;--d:70ms"></span>
+        <span class="bg-elm" style="--x:62%;--y:66%;--s:240px;--o:.16;--d:130ms"></span>
+        <div class="bg-job left">
+          <h3>Chef de Produit</h3>
+          <p>Besoins users, roadmap, priorisation.</p>
+        </div>
+        <div class="bg-job right">
+          <p>Valeur, impact, coordination transverse.</p>
+        </div>
+        <div class="bg-job top">
+          <p>Outils: roadmap, backlog, interviews.</p>
+        </div>
+        <div class="bg-job bottom">
+          <p>Soft skills: priorisation, ecoute, synthese.</p>
+        </div>
+      </div>
+      <div class="bg-group" data-bg-group="designer">
+        <span class="bg-elm" style="--x:10%;--y:22%;--s:180px;--o:.26;--d:0ms"></span>
+        <span class="bg-elm" style="--x:78%;--y:22%;--s:140px;--o:.22;--d:90ms"></span>
+        <span class="bg-elm" style="--x:60%;--y:70%;--s:210px;--o:.18;--d:160ms"></span>
+        <div class="bg-job left">
+          <h3>UX/UI Designer</h3>
+          <p>Parcours fluide, interface lisible, tests.</p>
+        </div>
+        <div class="bg-job right">
+          <p>Prototype, accessibilite, systeme visuel.</p>
+        </div>
+        <div class="bg-job top">
+          <p>Outils: wireframes, design system, tests.</p>
+        </div>
+        <div class="bg-job bottom">
+          <p>Soft skills: empathie, detail, narration.</p>
+        </div>
+      </div>
+      <div class="bg-group" data-bg-group="ops">
+        <span class="bg-elm" style="--x:16%;--y:28%;--s:190px;--o:.25;--d:0ms"></span>
+        <span class="bg-elm" style="--x:72%;--y:20%;--s:125px;--o:.22;--d:80ms"></span>
+        <span class="bg-elm" style="--x:56%;--y:68%;--s:220px;--o:.17;--d:150ms"></span>
+        <div class="bg-job left">
+          <h3>Ingenieur DevOps</h3>
+          <p>CI/CD, infra, fiabilite des services.</p>
+        </div>
+        <div class="bg-job right">
+          <p>Monitoring, securite, automatisation.</p>
+        </div>
+        <div class="bg-job top">
+          <p>Outils: pipelines, cloud, observabilite.</p>
+        </div>
+        <div class="bg-job bottom">
+          <p>Soft skills: anticipation, calme, fiabilite.</p>
+        </div>
+      </div>
+      <div class="bg-group" data-bg-group="acquisition">
+        <span class="bg-elm" style="--x:12%;--y:26%;--s:185px;--o:.25;--d:0ms"></span>
+        <span class="bg-elm" style="--x:76%;--y:18%;--s:135px;--o:.22;--d:90ms"></span>
+        <span class="bg-elm" style="--x:62%;--y:72%;--s:235px;--o:.18;--d:150ms"></span>
+        <div class="bg-job left">
+          <h3>Responsable Acquisition</h3>
+          <p>Campagnes, conversion, croissance.</p>
+        </div>
+        <div class="bg-job right">
+          <p>ROI canaux, ciblage, experimentation.</p>
+        </div>
+        <div class="bg-job top">
+          <p>Leviers: SEA, SEO, social, CRM.</p>
+        </div>
+        <div class="bg-job bottom">
+          <p>Soft skills: analyse, creativite, negociation.</p>
+        </div>
+      </div>
+    </div>
+
+    <header class="helm-header">
+      <a class="helm-back" href="index.html" aria-label="Retour à l'accueil">
+      </a>
+      <p class="helm-brand">algo <span>next</span></p>
+      <div class="helm-header-right" aria-hidden="true">
+        <img src="Logo_algonext.png" alt="licorne violet" class="helm-logo-img" />
+      </div>
+    </header>
+
+    <main class="helm-page">
+      <div class="helm-info">
+        <p class="helm-eyebrow">Navigation</p>
+        <h1 class="helm-title">Pilotez votre cap</h1>
+        <p class="helm-hint">
+          Déplacez la souris pour faire tourner le gouvernail.
+          Cliquez ensuite sur une destination dans la bande défilante.
+        </p>
+        <div class="helm-destination" id="helmDestination" aria-live="polite">
+          <span class="helm-dest-dot" id="helmDot"></span>
+          <span class="helm-current" id="helmCurrent">Aucun metier selectionne</span>
+        </div>
+      </div>
+
+      <div class="helm-orbit" id="helmOrbit">
+        <div class="helm-orbit-ring" aria-hidden="true"></div>
+        <div class="helm-visual">
+          <svg class="helm" id="helm" viewBox="0 0 280 280" role="img" aria-label="Gouvernail de navigation">
+            <defs>
+              <g id="hspoke">
+                <rect x="-5" y="-107" width="10" height="75" rx="5" fill="#fbd400" />
+                <ellipse cx="0" cy="-120" rx="10" ry="15" fill="#c9a020" />
+              </g>
+            </defs>
+            <g transform="translate(140 140)">
+              <circle r="110" fill="none" stroke="#fbd400" stroke-width="14" />
+              <circle r="93"  fill="none" stroke="rgba(251,212,0,0.25)" stroke-width="2" />
+              <use href="#hspoke" />
+              <use href="#hspoke" transform="rotate(45)" />
+              <use href="#hspoke" transform="rotate(90)" />
+              <use href="#hspoke" transform="rotate(135)" />
+              <use href="#hspoke" transform="rotate(180)" />
+              <use href="#hspoke" transform="rotate(225)" />
+              <use href="#hspoke" transform="rotate(270)" />
+              <use href="#hspoke" transform="rotate(315)" />
+              <circle r="34" fill="#fbd400" />
+              <circle r="22" fill="#3a1a60" />
+              <circle r="9"  fill="#fbd400" />
+              <circle r="4"  fill="#2a1050" />
+            </g>
+          </svg>
+          <div class="helm-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </main>
+
+    <section class="scene-panel" aria-live="polite" aria-label="Aperçu du cap actif">
+      <article class="scene-card is-active" data-scene-card="dirigeant">
+        <h2>Metier: Dirigeant</h2>
+        <p class="scene-intro">Oriente l'entreprise, prend les decisions strategiques et aligne les equipes sur les objectifs.</p>
+        <div class="scene-columns">
+          <div>
+            <h4>Missions</h4>
+            <ul class="scene-list">
+              <li>Definir la vision et les priorites.</li>
+              <li>Arbitrer budget et investissement.</li>
+              <li>Piloter les objectifs trimestriels.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Indicateurs suivis</h4>
+            <ul class="scene-list">
+              <li>Croissance chiffre d'affaires.</li>
+              <li>Marge et rentabilite.</li>
+              <li>Performance des equipes.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-tags"><span>Leadership</span><span>Strategie</span><span>Pilotage</span></div>
+      </article>
+      <article class="scene-card" data-scene-card="developpeur">
+        <h2>Metier: Developpeur</h2>
+        <p class="scene-intro">Construit les fonctionnalites produit, garantit la qualite technique et la maintenabilite.</p>
+        <div class="scene-columns">
+          <div>
+            <h4>Missions</h4>
+            <ul class="scene-list">
+              <li>Developper les fonctionnalites cle.</li>
+              <li>Ecrire des tests automatises.</li>
+              <li>Corriger les anomalies en production.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Competences cle</h4>
+            <ul class="scene-list">
+              <li>Architecture et API.</li>
+              <li>Qualite de code et revue.</li>
+              <li>Performance applicative.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-tags"><span>Code</span><span>Tests</span><span>Architecture</span></div>
+      </article>
+      <article class="scene-card" data-scene-card="product">
+        <h2>Metier: Chef de Produit</h2>
+        <p class="scene-intro">Relie besoins utilisateurs et objectifs business pour guider la roadmap du produit.</p>
+        <div class="scene-columns">
+          <div>
+            <h4>Missions</h4>
+            <ul class="scene-list">
+              <li>Identifier les besoins prioritaires.</li>
+              <li>Definir la roadmap par valeur.</li>
+              <li>Coordonner design et technique.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Livrables</h4>
+            <ul class="scene-list">
+              <li>User stories et criteres d'acceptation.</li>
+              <li>Backlog priorise.</li>
+              <li>Plan de release.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-tags"><span>Roadmap</span><span>Discovery</span><span>Priorisation</span></div>
+      </article>
+      <article class="scene-card" data-scene-card="designer">
+        <h2>Metier: UX/UI Designer</h2>
+        <p class="scene-intro">Concoit des experiences simples, coherentes et efficaces sur l'ensemble du parcours utilisateur.</p>
+        <div class="scene-columns">
+          <div>
+            <h4>Missions</h4>
+            <ul class="scene-list">
+              <li>Cartographier les parcours utilisateurs.</li>
+              <li>Designer interfaces et prototypes.</li>
+              <li>Valider par tests d'usage.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Livrables</h4>
+            <ul class="scene-list">
+              <li>Wireframes et maquettes.</li>
+              <li>Design system.</li>
+              <li>Specifications d'interaction.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-tags"><span>UX Research</span><span>UI</span><span>Accessibilite</span></div>
+      </article>
+      <article class="scene-card" data-scene-card="ops">
+        <h2>Metier: Ingenieur DevOps</h2>
+        <p class="scene-intro">Garantit des mises en production fiables, securisees et rapides grace a l'automatisation.</p>
+        <div class="scene-columns">
+          <div>
+            <h4>Missions</h4>
+            <ul class="scene-list">
+              <li>Mettre en place CI/CD.</li>
+              <li>Maintenir l'infrastructure cloud.</li>
+              <li>Superviser incidents et disponibilite.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outils</h4>
+            <ul class="scene-list">
+              <li>Pipeline de deploiement.</li>
+              <li>Observabilite et alerting.</li>
+              <li>Securite et sauvegardes.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-tags"><span>CI/CD</span><span>Cloud</span><span>SRE</span></div>
+      </article>
+      <article class="scene-card" data-scene-card="acquisition">
+        <h2>Metier: Responsable Acquisition</h2>
+        <p class="scene-intro">Developpe la croissance en pilotant les canaux, les campagnes et l'optimisation du funnel.</p>
+        <div class="scene-columns">
+          <div>
+            <h4>Missions</h4>
+            <ul class="scene-list">
+              <li>Lancer et optimiser les campagnes.</li>
+              <li>Travailler le tunnel de conversion.</li>
+              <li>Segmenter et cibler les audiences.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>KPIs</h4>
+            <ul class="scene-list">
+              <li>CAC et ROAS.</li>
+              <li>Taux de conversion.</li>
+              <li>Retention et valeur client.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scene-tags"><span>Growth</span><span>Performance</span><span>Analytics</span></div>
+      </article>
+    </section>
+
+    <section class="pages-strip" aria-label="Destinations">
+      <div class="pages-track">
+        <a class="page-link purple" href="index.html#dirigeant" data-label="Dirigeant" data-color="#815a8f">Dirigeant</a>
+        <a class="page-link blue" href="index.html#developpeur" data-label="Développeur" data-color="#6730ec">Développeur</a>
+        <a class="page-link green" href="index.html#product" data-label="Chef de Produit" data-color="#9ed763">Chef de Produit</a>
+        <a class="page-link yellow" href="index.html#designer" data-label="UX/UI Designer" data-color="#fbd400">UX/UI Designer</a>
+        <a class="page-link orange" href="index.html#ops" data-label="Ingenieur DevOps" data-color="#ff9000">Ingenieur DevOps</a>
+        <a class="page-link red" href="index.html#acquisition" data-label="Responsable Acquisition" data-color="#f73f52">Responsable Acquisition</a>
+
+        <a class="page-link purple" href="index.html#dirigeant" data-label="Dirigeant" data-color="#815a8f" aria-hidden="true" tabindex="-1">Dirigeant</a>
+        <a class="page-link blue" href="index.html#developpeur" data-label="Développeur" data-color="#6730ec" aria-hidden="true" tabindex="-1">Développeur</a>
+        <a class="page-link green" href="index.html#product" data-label="Chef de Produit" data-color="#9ed763" aria-hidden="true" tabindex="-1">Chef de Produit</a>
+        <a class="page-link yellow" href="index.html#designer" data-label="UX/UI Designer" data-color="#fbd400" aria-hidden="true" tabindex="-1">UX/UI Designer</a>
+        <a class="page-link orange" href="index.html#ops" data-label="Ingenieur DevOps" data-color="#ff9000" aria-hidden="true" tabindex="-1">Ingenieur DevOps</a>
+        <a class="page-link red" href="index.html#acquisition" data-label="Responsable Acquisition" data-color="#f73f52" aria-hidden="true" tabindex="-1">Responsable Acquisition</a>
+      </div>
+    </section>
+
+    <script src="gouvernail.js"></script>
+  </body>
+</html>
