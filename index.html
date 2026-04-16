@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Gouvernail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="marque"><strong>AlgoNext</strong></p>
+    </header>
+    <main>
+      <div class="scene">
+        <!-- Panneau gauche -->
+        <aside class="panneau panneau-gauche" id="panneau-gauche">
+          <div class="panneau-contenu">
+            <h2 class="panneau-titre" id="panneau-titre-g"></h2>
+            <ul class="panneau-liste" id="panneau-liste-g"></ul>
+          </div>
+        </aside>
+
+        <!-- Centre : gouvernail -->
+        <div class="centre">
+          <h1>Pilotez votre cap</h1>
+          <div class="metier-zone">
+            <p class="metier-nom" id="metier-nom">Tournez le gouvernail</p>
+            <p class="metier-desc" id="metier-desc"></p>
+          </div>
+          <div class="svg-zone">
+            <svg class="helm" id="helm" width="540" height="540" viewBox="0 0 280 280" role="img" aria-label="Gouvernail de navigation">
+            <defs>
+              <!-- Dégradé marron pour les rayons -->
+              <linearGradient id="orRayon" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%"   stop-color="#1a0a02" />
+                <stop offset="35%"  stop-color="#8b4513" />
+                <stop offset="65%"  stop-color="#a0522d" />
+                <stop offset="100%" stop-color="#1a0a02" />
+              </linearGradient>
+              <!-- Dégradé marron pour l'anneau -->
+              <linearGradient id="orAnneau" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stop-color="#c46a2a" />
+                <stop offset="45%"  stop-color="#7a3510" />
+                <stop offset="100%" stop-color="#3a1a06" />
+              </linearGradient>
+              <!-- Dégradé radial pour le moyeu -->
+              <radialGradient id="orMoyeu" cx="38%" cy="32%" r="65%">
+                <stop offset="0%"   stop-color="#c47840" />
+                <stop offset="50%"  stop-color="#8b4513" />
+                <stop offset="100%" stop-color="#2a0e04" />
+              </radialGradient>
+              <!-- Fond sombre du moyeu -->
+              <radialGradient id="fondMoyeu" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#2a1208" />
+                <stop offset="100%" stop-color="#0f0604" />
+              </radialGradient>
+              <!-- Rayon marron -->
+              <g id="hspoke">
+                <rect x="-5" y="-107" width="10" height="75" rx="5" fill="url(#orRayon)" />
+                <rect x="-1.5" y="-107" width="3" height="75" rx="2" fill="rgba(200,140,80,0.2)" />
+                <ellipse cx="0" cy="-120" rx="10" ry="15" fill="url(#orMoyeu)" />
+                <ellipse cx="-3" cy="-126" rx="4" ry="6" fill="rgba(200,150,100,0.3)" />
+              </g>
+            </defs>
+            <g id="gouvernail-groupe" transform="translate(140 140)">
+              <!-- Anneau extérieur marron -->
+              <circle r="112" fill="none" stroke="#0f0604" stroke-width="20" />
+              <circle r="110" fill="none" stroke="url(#orAnneau)" stroke-width="16" />
+              <circle r="110" fill="none" strokePILOTEZ VOTRE CAP="rgba(200,140,80,0.15)" stroke-width="16" />
+              <!-- Filet intérieur -->
+              <circle r="93"  fill="none" stroke="rgba(160,100,50,0.3)" stroke-width="1" />
+              <!-- Les 8 rayons -->
+              <use href="#hspoke" />
+              <use href="#hspoke" transform="rotate(45)" />
+              <use href="#hspoke" transform="rotate(90)" />
+              <use href="#hspoke" transform="rotate(135)" />
+              <use href="#hspoke" transform="rotate(180)" />
+              <use href="#hspoke" transform="rotate(225)" />
+              <use href="#hspoke" transform="rotate(270)" />
+              <use href="#hspoke" transform="rotate(315)" />
+              <!-- Moyeu : fond sombre + bord or -->
+              <circle r="36" fill="url(#fondMoyeu)" />
+              <circle r="36" fill="none" stroke="url(#orAnneau)" stroke-width="3" />
+              <circle r="28" fill="none" stroke="rgba(200,160,60,0.2)" stroke-width="1" />
+              <!-- Vis centrale marron foncé -->
+              <circle r="10" fill="url(#orMoyeu)" />
+              <circle r="7"  fill="url(#fondMoyeu)" />
+              <circle r="4"  fill="url(#orMoyeu)" />
+              <circle r="2"  fill="rgba(220,170,120,0.8)" />
+            </g>
+        </svg>
+          </div>
+        </div>
+
+        <!-- Panneau droit -->
+        <aside class="panneau panneau-droit" id="panneau-droit">
+          <div class="panneau-contenu">
+            <h2 class="panneau-titre" id="panneau-titre-d"></h2>
+            <ul class="panneau-liste" id="panneau-liste-d"></ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
